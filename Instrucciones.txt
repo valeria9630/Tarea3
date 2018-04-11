@@ -1,0 +1,9 @@
+Instrucciones para sumar:
+-Seleccione una fruta
+-Presione sumar
+-El resultado será uno de los sumandos para realizar una nueva suma
+Instrucciones para agregar:
+-Introduzca un  nuevo alimento
+-Presione agregar
+-El alimento agregado aparecerá como uno de los sumandos para realizar una nueva suma y en la lista de alimentos
+
