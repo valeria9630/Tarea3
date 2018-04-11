@@ -11,18 +11,18 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane id="AnchorPane" prefHeight="395.0" prefWidth="495.0" style="-fx-background-image: fhy;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.141" fx:controller="calcu.frutadora.FXMLDocumentController">
+<AnchorPane id="AnchorPane" prefHeight="395.0" prefWidth="495.0" style="-fx-background-image: fhy;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="calcu.frutadora.FXMLDocumentController">
     <children>
-      <ComboBox fx:id="listaFrutas" editable="true" layoutX="288.0" layoutY="161.0" prefWidth="150.0" promptText="Fruta" />
-      <Button fx:id="Suma" layoutX="207.0" layoutY="219.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="57.0" text="Sumar" />
+      <ComboBox fx:id="cbListaFrutas" editable="true" layoutX="288.0" layoutY="161.0" prefWidth="150.0" promptText="Fruta" />
+      <Button fx:id="Suma" layoutX="207.0" layoutY="219.0" mnemonicParsing="false" onAction="#sumarAlimentos" prefHeight="25.0" prefWidth="57.0" text="Sumar" />
       <ImageView fitHeight="59.0" fitWidth="57.0" layoutX="424.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../../Frutita%203.png" />
          </image>
       </ImageView>
-      <Label fx:id="Fruta" layoutX="76.0" layoutY="165.0" prefHeight="17.0" prefWidth="131.0" text="Pera" />
-      <Label fx:id="AgregarFrutaNueva" layoutX="23.0" layoutY="350.0" prefHeight="17.0" prefWidth="131.0" text="Agregar Fruta Nueva:" />
-      <TextField fx:id="NuevaFruta" layoutX="173.0" layoutY="346.0" />
+      <Label fx:id="frutaFija" layoutX="76.0" layoutY="165.0" prefHeight="17.0" prefWidth="131.0" text="Pan" />
+      <Label fx:id="AgregarFrutaNueva" layoutX="23.0" layoutY="350.0" prefHeight="17.0" prefWidth="150.0" text="Agregar Alimento Nueva:" />
+      <TextField fx:id="nuevaFruta" layoutX="173.0" layoutY="346.0" prefHeight="25.0" prefWidth="116.0" />
       <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="495.0">
         <menus>
           <Menu mnemonicParsing="false" text="Operaciones">
@@ -35,6 +35,7 @@
       </MenuBar>
       <Label layoutX="234.0" layoutY="165.0" text="+" />
       <Label fx:id="Resultado" layoutX="154.0" layoutY="272.0" text="Resultado:" />
-      <Label fx:id="ResultadoSuma" layoutX="234.0" layoutY="272.0" prefHeight="17.0" prefWidth="103.0" text="Label" />
+      <Label fx:id="resultadoSuma" layoutX="234.0" layoutY="272.0" prefHeight="17.0" prefWidth="103.0" />
+      <Button layoutX="302.0" layoutY="346.0" mnemonicParsing="false" onAction="#agregar" prefHeight="25.0" prefWidth="75.0" text="Agregar" />
     </children>
 </AnchorPane>
